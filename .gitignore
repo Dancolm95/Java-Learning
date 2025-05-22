@@ -1,0 +1,5 @@
+#Ignora archivos de compilacion
+.class
+
+#Ignora carpetas del entorno de vs code
+.vscode/
