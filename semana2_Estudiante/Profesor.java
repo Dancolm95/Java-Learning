@@ -15,7 +15,7 @@ public class Profesor extends Persona {
   @Override
   public void presentarse() {
     /* super.presentarse(); */
-    System.out.println("Soy el profesor " + nombre);
+    System.out.println("Soy el profesor " + getNombre());
     System.out.println("mi especialidad es: " + especialidad);
   
   }
