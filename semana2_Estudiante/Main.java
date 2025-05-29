@@ -10,7 +10,10 @@ public class Main {
     Profesor profesor1 = new Profesor("Daniel", 30, "Programacion");
     profesor1.presentarse();
 
-    Persona[] personas = new Persona[4];
+    Persona persona1 = new Persona(-2, "Alejandro");
+    persona1.presentarse();
+
+/*     Persona[] personas = new Persona[4];
     personas [0] = new Estudiante2("andrea", 24, 16);
     personas [1] = new Estudiante2("andre", 22, 15);
     personas [2] = new Profesor("Piti", 11, "hacer hora");
@@ -18,6 +21,6 @@ public class Main {
 
     for(Persona p : personas) {
       p.presentarse();
-    }
+    } */
   }
 }
