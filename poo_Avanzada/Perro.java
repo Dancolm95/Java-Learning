@@ -1,7 +1,7 @@
 package poo_Avanzada;
 
-public class Perro extends Animal {
-    public String raza;
+public class Perro extends Animal implements Mascota {
+    String raza;
 
     public Perro(String nombre, String raza) {
     super(nombre);
@@ -9,7 +9,13 @@ public class Perro extends Animal {
     
   }
 
-  void hacerSonido() {
+  public void hacerSonido() {
     System.out.println("Guau");
+  }
+  public void jugar() {
+    System.out.println("Me gusta jugar con pelotas");
+  }
+  public void vacunar() {
+    System.out.println("Si me vacunan no me inmuto porque soy un perro");
   }
 }
