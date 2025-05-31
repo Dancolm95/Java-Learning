@@ -11,5 +11,5 @@ public abstract class Animal {
     System.out.println("Hola soy un animal y mi nombre es " + nombre);
   }
 
-  abstract void hacerSonido();
+  public abstract void hacerSonido();
 }
