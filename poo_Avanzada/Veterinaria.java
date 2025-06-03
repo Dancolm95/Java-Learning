@@ -11,10 +11,6 @@ public class Veterinaria {
         System.out.println("El historial medico se gestiona en la veterinaria " + nombrVeterinaria);
       }
     }
-
-    public class EjecutarDatos {
-
-    }
 }
 
 
