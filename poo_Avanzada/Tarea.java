@@ -15,4 +15,6 @@ public abstract class Tarea {
 
     nuevTarea.ejecutar();
   }
+
+  for-each
 }
