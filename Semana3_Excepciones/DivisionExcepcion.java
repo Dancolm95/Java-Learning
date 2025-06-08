@@ -4,7 +4,7 @@ public class DivisionExcepcion {
   double a = 0;
   double b = 0;
 
-  public DivisionExcepcion(int a, int b) {
+  public DivisionExcepcion(double a, double b) {
     this.a = a;
     this.b = b;
   }
