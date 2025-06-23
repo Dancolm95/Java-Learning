@@ -6,6 +6,7 @@ import poo_Avanzada.Perro;
 import poo_Avanzada.Veterinaria;
 import poo_Avanzada.Gato;
 import poo_Avanzada.Mascota;
+import Semana4.Caja;
 
 class Practica {
 
@@ -37,4 +38,13 @@ class Practica {
   Veterinaria nuevaVeterinaria = new Veterinaria("Colitas");
   Veterinaria.HistorialMedico newVeterinaria = nuevaVeterinaria.new HistorialMedico();
     newVeterinaria.mostrarDatos();
+
+  Caja<String> stringBox = new Caja<>();
+    stringBox.set("Hello");
+    System.out.println("Value: " + stringBox.get());
+
+    // Create a Caja to hold an Integer
+    Caja<Integer> intBox = new Caja<>();
+    intBox.set(50);
+    System.out.println("Value: " + intBox.get());
   }}
