@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import poo_Avanzada.Animal;
+
 public class Util {
   /*
    * public static <T extends Comparable<T>> T maximo(T a, T b) {
@@ -29,5 +31,23 @@ public class Util {
 
   public static <T> void intercambiarElementos(List<T> lista, int i, int j) {
     // implementación...
+  }
+
+  public static void imprimirLista(List<?> lista) {
+    for(Object element : lista) {
+      System.out.println(element);
+    }
+  }
+
+  public static void mostrarTiposEnLista(List<?> lista) {
+    for(Object elm: lista) {
+      System.out.println(elm + " - " + elm.getClass().getSimpleName());
+    }
+  }
+
+    public static void mostrarNombresDeAnimales(List<? extends Animal> lista) {
+    for(Animal a: lista){
+      a.presentarse();
+    }
   }
 }
