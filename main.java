@@ -54,24 +54,14 @@ class Practica {
     intBox.set(50);
     System.out.println("Value: " + intBox.get());
 
-/*     System.out.println("maximo entre 5 y 8: " + Util.maximo(5, 8));
-    System.out.println("maximo entre pera y manzana: " + Util.maximo("pera", "manzana")); */
+    /*
+     * System.out.println("maximo entre 5 y 8: " + Util.maximo(5, 8));
+     * System.out.println("maximo entre pera y manzana: " + Util.maximo("pera",
+     * "manzana"));
+     */
 
     List<Integer> numeros = List.of(3, 8, 2, 15, 6);
     Integer max = Util.encontrarMaximoEnLista(numeros);
     System.out.println("Máximo: " + max); // Debería imprimir: 15
-
-    List<Animal> animales = new ArrayList<>();
-    Util.llenarConPerros(animales);
-
-    for (Animal a : animales) {
-      a.presentarse();
-    }
-
-    List<Object> objetos = new ArrayList<>();
-    Util.llenarConPerros(objetos);
-    for (Object o : objetos) {
-      System.out.println(o);
-    }
   }
 }

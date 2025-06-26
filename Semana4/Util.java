@@ -4,18 +4,17 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-<<<<<<< HEAD
-import poo_Avanzada.Perro;
-=======
 import poo_Avanzada.Animal;
->>>>>>> 28b39a5d0b4cd9a9f345093094b73034d3c11b94
+import poo_Avanzada.Perro;
 
 public class Util {
-  /*
-   * public static <T extends Comparable<T>> T maximo(T a, T b) {
-   * return a.compareTo(b) > 0 ? a : b;
-   * }
-   */
+  
+   public static <T extends Comparable<T>> T maximo(T a, T b) {
+   return a.compareTo(b) > 0 ? a : b;
+   }
+  
+
+  // encontrar el maximo en una lista
   public static <T extends Comparable<T>> T encontrarMaximoEnLista(List<T> lista) {
     if (lista == null || lista.isEmpty())
       return null;
@@ -33,31 +32,23 @@ public class Util {
     return max;
   }
 
-  public static <T> void intercambiarElementos(List<T> lista, int i, int j) {
-    // implementación...
-  }
-
-<<<<<<< HEAD
-  public static void llenarConPerros(List<? super Perro> lista) {
-    lista.add(new Perro("Maricucha", "criolla"));
-    lista.add(new Perro("Pancho", "Mestizo"));
-=======
-  public static void imprimirLista(List<?> lista) {
-    for(Object element : lista) {
-      System.out.println(element);
-    }
-  }
-
+  // Imprimir valir y tipo con <?>
   public static void mostrarTiposEnLista(List<?> lista) {
-    for(Object elm: lista) {
-      System.out.println(elm + " - " + elm.getClass().getSimpleName());
+    for (Object elem : lista) {
+      System.out.println(elem + " - " + elem.getClass().getSimpleName());
     }
   }
 
-    public static void mostrarNombresDeAnimales(List<? extends Animal> lista) {
-    for(Animal a: lista){
+  // Leer animales de una lista de subtipos (<? extends Animal>)
+  public static void mostrarNombresDeAnimales(List<? extends Animal> lista) {
+    for (Animal a : lista) {
       a.presentarse();
     }
->>>>>>> 28b39a5d0b4cd9a9f345093094b73034d3c11b94
+  }
+
+  // Agregar perros a una lista de supertypes (<? super Perro>)
+  public static void llenarConPerros(List<? super Perro> lista) {
+    lista.add(new Perro("Maricucha", "criolla"));
+    lista.add(new Perro("Pancho", "mestizo"));
   }
 }
