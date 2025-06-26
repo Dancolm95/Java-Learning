@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import poo_Avanzada.Perro;
+
 public class Util {
   /*
    * public static <T extends Comparable<T>> T maximo(T a, T b) {
@@ -29,5 +31,10 @@ public class Util {
 
   public static <T> void intercambiarElementos(List<T> lista, int i, int j) {
     // implementación...
+  }
+
+  public static void llenarConPerros(List<? super Perro> lista) {
+    lista.add(new Perro("Maricucha", "criolla"));
+    lista.add(new Perro("Pancho", "Mestizo"));
   }
 }
