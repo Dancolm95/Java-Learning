@@ -4,7 +4,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+<<<<<<< HEAD
 import poo_Avanzada.Perro;
+=======
+import poo_Avanzada.Animal;
+>>>>>>> 28b39a5d0b4cd9a9f345093094b73034d3c11b94
 
 public class Util {
   /*
@@ -33,8 +37,27 @@ public class Util {
     // implementación...
   }
 
+<<<<<<< HEAD
   public static void llenarConPerros(List<? super Perro> lista) {
     lista.add(new Perro("Maricucha", "criolla"));
     lista.add(new Perro("Pancho", "Mestizo"));
+=======
+  public static void imprimirLista(List<?> lista) {
+    for(Object element : lista) {
+      System.out.println(element);
+    }
+  }
+
+  public static void mostrarTiposEnLista(List<?> lista) {
+    for(Object elm: lista) {
+      System.out.println(elm + " - " + elm.getClass().getSimpleName());
+    }
+  }
+
+    public static void mostrarNombresDeAnimales(List<? extends Animal> lista) {
+    for(Animal a: lista){
+      a.presentarse();
+    }
+>>>>>>> 28b39a5d0b4cd9a9f345093094b73034d3c11b94
   }
 }
