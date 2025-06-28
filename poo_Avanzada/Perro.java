@@ -1,5 +1,7 @@
 package poo_Avanzada;
 
+import java.util.List;
+
 public class Perro extends Animal implements Mascota {
     String raza;
 
@@ -17,5 +19,10 @@ public class Perro extends Animal implements Mascota {
   }
   public void vacunar() {
     System.out.println("Si me vacunan no me inmuto porque soy un perro");
+  }
+
+  @Override
+  public String toString() {
+    return "Perro {nombre= " + nombre + "', raza='" + raza +"'}";
   }
 }

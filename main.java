@@ -7,6 +7,7 @@ import poo_Avanzada.Veterinaria;
 import poo_Avanzada.Gato;
 import poo_Avanzada.Mascota;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Semana4.Caja;
@@ -62,19 +63,5 @@ class Practica {
     List<Integer> numeros = List.of(3, 8, 2, 15, 6);
     Integer max = Util.encontrarMaximoEnLista(numeros);
     System.out.println("Máximo: " + max); // Debería imprimir: 15
-
-    List<String> listaMercado = List.of("aji amarillo", "queso", "leche");
-    List<Integer> preciosListaMercado = List.of(1, 5, 2);
-    List<Object> tiposVariados = List.of("Texto", 123, 45.6, true);
-
-    Util.imprimirLista(listaMercado);
-    Util.imprimirLista(preciosListaMercado);
-    Util.mostrarTiposEnLista(tiposVariados);
-
-    List<Perro> perros = List.of(
-        new Perro("Chiquiwilo", "American Bully"),
-        new Perro("Firulais", "Pitbull"));
-    Util.mostrarNombresDeAnimales(perros);
-
   }
 }
